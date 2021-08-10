@@ -18,7 +18,7 @@ namespace SeleniumWebTest
             try
             {
                 driver = new ChromeDriver();
-                driver.Url = "http://automationpractice.com/";                                                // Access to page
+                driver.Navigate().GoToUrl("http://automationpractice.com/");                                   // Access to page
                 driver.FindElement(By.ClassName("sf-with-ul")).Click();                                       // Look for the lits of dresses
                 string[] items = new string[] { "color_13", "color_16", "color_43", "color_2", "color_21", "color_20", "color_19", "color_40", "color_31", "color_37" };  //List of Items to buy
 
