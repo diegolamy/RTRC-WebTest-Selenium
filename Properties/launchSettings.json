@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WebTest": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
