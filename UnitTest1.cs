@@ -25,13 +25,13 @@ namespace SeleniumWebTest
                 for (int i = 0; i < items.Length; i++)                                                        // Check the list to buy and add to the cart
                 {
                     string findDress = items[i];                                                              // Determine the dress to buy
-                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);                        // Delay 2 seconds
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);                        // Delay 2 seconds
                     driver.FindElement(By.Id(findDress)).Click();                                             // Look for the dress to buy
-                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);                        // Delay for 2 seconds
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);                        // Delay for 2 seconds
                     driver.FindElement(By.Name("Submit")).Click();                                            // Look for the add button
-                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);                        // Delay for 2 seconds
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);                        // Delay for 2 seconds
                     driver.FindElement(By.CssSelector(".continue.btn.btn-default.button.exclusive-medium")).Click();  //Look for the continue button 
-                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);                        // Delay 2 seconds
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);                        // Delay 2 seconds
                     driver.FindElement(By.ClassName("sf-with-ul")).Click();                                   // Look for the desses list                      
                 }
 
